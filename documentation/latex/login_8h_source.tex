@@ -1,0 +1,38 @@
+\hypertarget{login_8h_source}{}\doxysection{login.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef LOGIN\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define LOGIN\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}armgym.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_login}{Login}};}
+\DoxyCodeLine{9 \}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{comment}{// Входной класс приложения}}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_login}{Login}} : \textcolor{keyword}{public} QWidget}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     Q\_OBJECT}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \textcolor{comment}{// Конструктор. Инициализирует графический интерфейс, начальные характеристики работы приложения и логику работы сигналов}}
+\DoxyCodeLine{18     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_login}{Login}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{19     \textcolor{comment}{// Деструктор}}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_login}{\string~Login}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{23     \textcolor{comment}{//Проверяет логин и пароль. Переводит работу в основную программу}}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} loginButton\_clicked();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{private}:}
+\DoxyCodeLine{27     \textcolor{comment}{// Хранит указатель на объект класса для работы с графическим интерфейсом}}
+\DoxyCodeLine{28     Ui::Login *ui;}
+\DoxyCodeLine{29     \textcolor{comment}{// Хранит объект основного класса}}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_arm_gym}{ArmGym}} *arm;}
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// LOGIN\_H}}
+
+\end{DoxyCode}
